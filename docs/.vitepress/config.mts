@@ -5,9 +5,10 @@ import VitePressPluginAutoNavSidebar from 'vitepress-plugin-auto-nav-sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+
     vite: {
         plugins: [
-            VitePressPluginAutoNavSidebar({
+            VitePressPluginAutoNavSidebar({ //自动生成导航栏和侧边栏插件配置
                 documentRootPath: '/docs',//文档文件所在的根路径
                 ignoreIndexItems: true,//是否忽略首页的文件
                 excludeFiles: [/.*demo.*/],//忽略的文件列表，支持正则匹配。
@@ -24,14 +25,17 @@ export default defineConfig({
         ],
     },
 
-
+    lastUpdated: true,//显示md最后更新时间
     base: '/VitePressSite/',
     title: "My Awesome Project",
     description: "A VitePress Site",
     themeConfig: {
        // https://vitepress.dev/reference/default-theme-config
 
-
+        //开启本地搜索
+        search: {
+            provider: 'local'
+        },
 
 
         // nav: [
@@ -52,9 +56,17 @@ export default defineConfig({
 
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
-        ]
-    }
+            {icon: 'github', link: 'https://github.com/Azure-97'}
+        ],
+        footer: {
+            message: '你好呀，这是我的小网站呀',
+            copyright: 'Copyright © 2024-AzureWang'
+        },
+
+    },
+    // markdown: {
+    //     lineNumbers: true//代码块启用行号
+    // },
 })
 
 
