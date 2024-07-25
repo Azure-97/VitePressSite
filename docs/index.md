@@ -3,21 +3,23 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "AzureWang"
+  text: "My VitePress Site"
+  tagline: "要有梦想\t\n\t即使遥远"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: About VitePress
+      link: https://vitepress.dev/zh/guide/getting-started
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: About Build This Site
+      link: https://github.com/Azure-97/VitePressSite
 
 features:
   - icon: 🥛
     title: Simple and minimal, always
     details: Lorem ipsum...
+    link: https://vitepress.dev/zh/
+    linkText: Learn More
   - icon: 🌸
     title: Another cool feature
     details: Lorem ipsum...
@@ -30,4 +32,3 @@ features:
     title: Another cool feature
     details: Lorem ipsum...
 ---
-
