@@ -12,7 +12,7 @@ export default defineConfig({
                 documentRootPath: '/docs',//文档文件所在的根路径
                 ignoreIndexItems: true,//是否忽略首页的文件
                 excludeFiles: [/.*demo.*/],//忽略的文件列表，支持正则匹配。
-                excludeFolders: ['.obsidian','.trash','attachments'],//忽略的文件夹列表，支持正则匹配。
+                excludeFolders: ['.obsidian','.trash','attachments','code'],//忽略的文件夹列表，支持正则匹配。
                 removeTitlePrefix: /^\d+-/,//删除标题中的前缀，如果标题中包含该前缀，则删除。
                 useTitleFromFileHeading: false,//如果设置为 true，则使用 .md 内容中的 h1 作为侧边栏和导航栏的标题。如果 h1 不存在，则使用文件名。
                 useTitleFromFrontmatter: false,//如果设置为 true，则使用 .md 文件的 frontmatter 中的 title 字段作为侧边栏和导航栏的标题。如果不存在或者无法解析，则使用文件名。
