@@ -19,7 +19,7 @@ export default defineConfig({
                 useSortFromTitle: true,//如果设置为 true，当菜单标题为数字开头时，按照数字排序。例如，如果文件为 [1-a.md , 10-a.md ,2-a.md]，最终会按照 [ 1-a.md , 2-a.md ,10-a.md] 排序。
                 sortMenusBy: 'fileName',//排序方式，支持按文件名、frontmatter 中的 order 字段、frontmatter 中的 date 字段排序。
                 sortMenusOrder: 'asc',//排序顺序，支持升序和降序。
-                collapsed: true,//是否折叠侧边栏。
+                collapsed: true,//是否折叠侧边栏
                 debugLog: true,//是否打印日志
             }),
         ],
