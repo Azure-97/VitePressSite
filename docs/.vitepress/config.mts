@@ -1,6 +1,6 @@
 import {defineConfig} from 'vitepress'
 
-import VitePressPluginAutoNavSidebar from 'vitepress-plugin-auto-nav-sidebar'
+import VitePressPluginAutoNavSidebar from '@movk-repo/vitepress-plugin-auto-nav-sidebar'
 
 
 // https://vitepress.dev/reference/site-config
