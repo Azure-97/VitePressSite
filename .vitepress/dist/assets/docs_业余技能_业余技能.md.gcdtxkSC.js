@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.D7kq4b6j.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docs/业余技能/业余技能.md","filePath":"docs/业余技能/业余技能.md","lastUpdated":null}'),o={name:"docs/业余技能/业余技能.md"};function s(c,r,n,d,_,p){return a(),t("div")}const m=e(o,[["render",s]]);export{l as __pageData,m as default};
