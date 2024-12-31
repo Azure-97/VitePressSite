@@ -141,7 +141,7 @@ jobs:
 >   
 > 确保 VitePress 中的 `base` 选项配置正确。有关更多详细信息，请参阅[设置根路径](https://vitepress.dev/zh/guide/deploy#setting-a-public-base-path)。
 > 设定 public 根目录
-默认情况下，我们假设站点将部署在域名 (/) 的根路径上。如果站点在子路径中提供服务，例如 https://mywebsite.com/blog/ ，则需要在 VitePress 配置（[config.mts](docs%2F.vitepress%2Fconfig.mts)）中将 base 选项设置为 '/blog/'。
+默认情况下，我们假设站点将部署在域名 (/) 的根路径上。如果站点在子路径中提供服务，例如 https://mywebsite.com/blog/ ，则需要在 VitePress 配置（config.mts）中将 base 选项设置为 '/blog/'。
 
 例：如果你使用的是 Github（或 GitLab）页面并部署到 user.github.io/VitePressSite/，请将 base 设置为 /VitePressSite/。
 
