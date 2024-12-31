@@ -156,7 +156,7 @@ jobs:
 ```text
 
 export default defineConfig({
-    markdown: {
+    markdown: { 
         math: true
     },
     ....
