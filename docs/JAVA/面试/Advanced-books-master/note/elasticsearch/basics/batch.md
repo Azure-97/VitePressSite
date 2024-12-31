@@ -23,7 +23,7 @@
 
 > 在之前我们的查询都是单条查询，如果查询多条就需要进行多次的IO，这样的效率不高，这时我们可以通过mget来进行批量查询，如下
 
-```json
+```txt
 # 查询 index为megacorp id为 1，2的数据
 GET /_mget
 {
@@ -49,7 +49,7 @@ GET /_mget
 
 如果查询的时同一个索引，我们还可以进行优化，如下
 
-```json
+```txt
 GET /megacorp/_mget
 {
   "ids": [
@@ -87,7 +87,7 @@ body\n
   否则，ElasticSearch将会把下一个body当成header处理，从而导致整个批量查询都解析错位。
 - body用于指定具体的查询内容，其格式请参考_search查询格式。
 
-```json
+```txt
 GET /_msearch
 {"index":"megacorp"}
 {"query":{"match":{"about":"I love"}}}
@@ -97,7 +97,7 @@ GET /_msearch
 
 如果是同一个索引可以简写成如下
 
-```json
+```txt
 GET /megacorp/_msearch
 {}
 {"query":{"match":{"about":"I love"}}}
@@ -107,7 +107,7 @@ GET /megacorp/_msearch
 
 返回的数据是一个数组，数组中的每一个元素依次对应一个查询（body）。
 
-```xml
+```txt
 {
     "responses":[<body1Response>,<body2Response>, ...]
 }
@@ -128,7 +128,7 @@ GET /megacorp/_msearch
 
 bulk api对json的语法，有严格的要求，每个json串不能换行，只能放一行，同时一个json串和一个json串之间，必须有一个换行
 
-```json
+```txt
 POST _bulk
 {"delete":{"_index":"megacorp","_id":30}}
 {"create":{"_index":"megacorp","_id":5}}
@@ -146,7 +146,7 @@ POST _bulk
 
 **bulk操作中，任意一个操作失败，是不会影响其他的操作的**，但是在返回结果里，会告诉你异常日志
 
-```json
+```txt
 {
   "took" : 30,
   "errors" : true,
