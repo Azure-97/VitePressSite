@@ -196,4 +196,4 @@ public class DemoApplication {
 }
 
 ```
-通过浏览器访问 http://localhost:8080/getStudentById/1
+通过浏览器访问 localhost:8080/getStudentById/1
